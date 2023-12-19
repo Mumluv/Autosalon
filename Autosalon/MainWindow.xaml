@@ -1,0 +1,32 @@
+﻿<Window x:Class="Autosalon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autosalon"
+        mc:Ignorable="d"
+        Title="Menu" Height="550" Width="850">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="190"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Margin="0,0,0,45" Source="/1671468578_kalix-club-p-bmv-logotip-oboi-krasivo-52.jpg" Stretch="Fill"/>
+        <StackPanel>
+            <Button Content="Покупатели" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch"  Margin="0 55 0 0" Height="45" Background="DarkRed" Foreground="White" VerticalAlignment="Bottom" Click="Buyers_Click"/>
+        </StackPanel>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Автосалон" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Button Content="Марки" HorizontalAlignment="Stretch" Height="45" Background="DarkRed" Foreground="White" Click="Marka_Click"/>
+            <Button Content="Сотрудники" HorizontalAlignment="Stretch" Height="45" Background="DarkRed" Foreground="White" Click="Emp_Click"/>
+            <Button Content="Автомобили" HorizontalAlignment="Stretch" Height="45" Background="DarkRed" Foreground="White" Click="Auto_Click"/>
+            <Button Content="Продажи" HorizontalAlignment="Stretch" Height="45" Background="DarkRed" Foreground="White" Click="Sell_Click"/>
+        </StackPanel>
+        <Frame Name="MainFrame" Grid.Column="1" Grid.Row="1"/>
+    </Grid>
+</Window>
